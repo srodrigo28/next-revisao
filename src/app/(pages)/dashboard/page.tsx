@@ -2,11 +2,8 @@
 import ContextAutenticao from "@/core/context/ContextoAutenticacao"
 import { useContext } from "react"
 
-interface DashboardProps {
-    gradient?: boolean
-}
 // bg-gradient-to-tr from-green-600 via-yellow-600 to-red-700
-export default function Dashboard(props: DashboardProps) {
+export default function Dashboard() {
     const { userApi } = useContext(ContextAutenticao)
     return (
         <div className="
@@ -18,6 +15,5 @@ export default function Dashboard(props: DashboardProps) {
             bg-clip-text text-transparent">Dashboard 2</h1>
             <p className="text-2xl">{userApi?.nome} - {userApi?.email}</p>
         </div>
-
     )
 }

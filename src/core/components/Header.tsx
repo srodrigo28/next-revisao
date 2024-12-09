@@ -9,7 +9,12 @@ export default function Cabecalho(){
                 <Link href="" className="text-sm text-white border-r-2 pr-2">Dashboard</Link>
                 <Link href="" className="text-sm text-white">Contato</Link>
             </nav>
-            <Link href="/login" className="hover:bg-red-600 duration-300 bg-slate-700 p-2 px-6 rounded-md text-white text-sm flex items-center justify-center">Sair</Link>
+            { "" === null ? (
+                // usuario === null
+                <Link href="/login" className="hover:bg-red-600 duration-300 bg-slate-700 p-2 px-6 rounded-md text-white text-sm flex items-center justify-center">Sair</Link>
+            ) : (
+                <Link href="/login" className="hover:bg-red-600 duration-300 bg-slate-700 p-2 px-6 rounded-md text-white text-sm flex items-center justify-center">Sair</Link>
+            )}
         </header>
     )
 }
