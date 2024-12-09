@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Cadastro de Devs</h1>
+    <p>Complete suas informações</p>
+    <br>
+
+    <fieldset>
+        <legend>Deixe suas informações atualizadas</legend>
+
+        <div class="row">
+            <label>Nome</label>
+            <input type="text" placeholder="Nome">
+        </div>
+        
+        <div class="row">
+            <label>Sobre nome</label>
+            <input type="text" placeholder="Sobrenome">
+        </div>
+        <div class="row-radio">
+            <label>HMTL5</label>
+            <input type="radio" name="" id="">
+        </div>
+
+    </fieldset>
+
+    <style>
+        body{
+            width: 100vw;
+            height: 100hv;
+            color: #fff;
+            background-color: blueviolet;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .row-radio label{
+            background-color: yellow;
+        }
+        .row-radio input{
+            background-color: blueviolet;
+        }
+        .row-radio{
+            display: flex;
+            background-color: red;
+        }
+        form{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            border-radius: 7px;
+            margin: 10px;
+            border: none;
+            padding: 7px;
+            width: 280px;
+        }
+    </style>
+</body>
+</html>

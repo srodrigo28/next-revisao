@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+</head>
+<body>
+    <h1>Aprendendo Javascript Vetores</h1>
+    <p id="teste"></p>
+    <p id="lista1"></p>
+    <p id="lista2"></p>
+
+    <script>
+        var pessoa1 = ["Debora", "Beatriz", "Joana", "Amanda"]
+        var pessoa2 = ["Gustavo", "Adriano", "Sergio", "Ronaldo"]
+        var selecionadas = pessoa1.slice(2)
+        // pessoa.pop() // remove o último item
+        // pessoa.shift() // remove o primeiro item
+        // delete pessoa[0] // deleta mais oculpa a possião com undefined
+        // pessoa.push("Gabriela") // adiciona no final da lista
+        // pessoa.splice(1, 0, "Gustavo", "Eduardo") adiciona novos elementos de acordo com o idice selecionado
+
+        
+        document.querySelector("#teste").innerHTML = pessoa1.sort().join("  ")
+        document.querySelector("#lista1").innerHTML = selecionadas.join("  ")
+
+        const lista_completa = pessoa1.concat(pessoa2)
+        document.querySelector("#lista2").innerHTML = lista_completa.join("<br>" + "1")
+        
+    </script>
+</body>
+</html>
